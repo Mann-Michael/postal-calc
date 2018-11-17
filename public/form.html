@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Postal Weight Calculator</title>
+</head>
+<body>
+	<h1>Postal Weight Calculator</h1>
+	<form action="/getRate" method="get">
+		<label for="weight">Weight (oz): </label> 
+		<input type="text" name="weight">	
+		<label for="type">Package Type: </label> 
+		<select name="type">
+			<option value="0">Letters (Stamped)</option>
+			<option value="1">Letters (Metered)</option>
+			<option value="2">Large Envelopes (Flats)</option>
+			<option value="3">First-Class Package Service—Retail</option>
+		</select>
+		<br><br>
+		<input type="submit" value="Calculate Cost">
+	</form>
+</body>
+</html>
